@@ -21,7 +21,7 @@
 <div id="success" class="overlay"><div class="panel"><div style="font-size:56px;color:#07835d">✓</div><h2>客戶資料建立成功</h2><p>客戶編號</p><div id="customerId" class="id"></div><button id="next" class="btn primary" type="button">＋ 建立下一筆客戶</button></div></div>
 <script>
   // Replace this after deploying the Apps Script receiver. It must end in /exec.
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyhmBMH3FigOFN5wHJ_d6hjIvGjyQwEy77nlGlFy8CYZxwiMQzlBD47BVoMQfkv7MZE/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Qw9REMTOEzTpG7QQ0nXQiVlSfbWkyqCqbqovF0g_v3UTFaBz-iWBBHWne_efdKvv/exec';
   const $=id=>document.getElementById(id);let card,audio,recorder,stream,chunks=[],sec=0,ticker;
   $('sales').value=localStorage.getItem('tp2026Sales')||'';
   $('cardInput').onchange=async e=>{const f=e.target.files[0];if(!f)return;card={dataUrl:await imageData(f),name:f.name};$('preview').src=card.dataUrl;$('preview').style.display='block';$('cardDone').style.display='block'};
